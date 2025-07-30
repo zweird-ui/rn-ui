@@ -1,0 +1,9 @@
+{
+  "tailwindCSS.classAttributes": ["class", "className", "classNames"],
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "tv\\(([^)(]*(?:\\([^)(]*(?:\\([^)(]*(?:\\([^)(]*\\)[^)(]*)*\\)[^)(]*)*\\)[^)(]*)*)\\)",
+      "\"(.*?)\""
+    ]
+  ]
+}
