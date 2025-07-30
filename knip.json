@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": ["./src/app/**/*.{ts,tsx}"],
+  "entry": ["./src/app/**/*.{ts,tsx}", "./src/components/ui/**/*.{ts,tsx}"],
   "ignore": ["metro.config.js", "babel.config.js", "app.json"],
   "rules": {
     "duplicates": "warn",
