@@ -37,6 +37,16 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      keyframes: {
+        "loader-spin": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        "loader-linear-spin": "loader-spin 1s linear infinite",
+        "loader-ease-spin": "loader-spin 1s ease infinite",
+      },
     },
   },
   plugins: [],
