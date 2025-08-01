@@ -12,6 +12,7 @@ export const loaderVariants = tv({
       secondary: "",
       danger: "",
       warning: "",
+      success: "",
     },
     isForeground: {
       true: "",
@@ -92,6 +93,18 @@ export const loaderVariants = tv({
       color: "warning",
       isForeground: false,
       class: "border-b-warning",
+    },
+    {
+      slots: ["circle1", "circle2"],
+      color: "success",
+      isForeground: true,
+      class: "border-b-success-foreground",
+    },
+    {
+      slots: ["circle1", "circle2"],
+      color: "success",
+      isForeground: false,
+      class: "border-b-success",
     },
   ],
   defaultVariants: {

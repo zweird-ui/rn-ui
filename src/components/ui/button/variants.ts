@@ -16,6 +16,7 @@ export const buttonVariants = tv({
       secondary: "",
       danger: "",
       warning: "",
+      success: "",
     },
     variant: {
       fill: "",
@@ -122,6 +123,25 @@ export const buttonVariants = tv({
         base: "border-warning",
         text: "text-warning",
         loader: "text-warning",
+      },
+    },
+    // Success variants
+    {
+      color: "success",
+      variant: "fill",
+      class: {
+        base: "bg-success",
+        text: "text-success-foreground",
+        loader: "text-success-foreground",
+      },
+    },
+    {
+      color: "success",
+      variant: "outline",
+      class: {
+        base: "border-success",
+        text: "text-success",
+        loader: "text-success",
       },
     },
   ],
