@@ -43,6 +43,10 @@ const ColorsSection = () => (
         <Loader color="warning" size="lg" />
         <Text className="text-xs text-muted-foreground">Warning</Text>
       </View>
+      <View className="items-center space-y-2">
+        <Loader color="success" size="lg" />
+        <Text className="text-xs text-muted-foreground">Success</Text>
+      </View>
     </View>
   </View>
 )

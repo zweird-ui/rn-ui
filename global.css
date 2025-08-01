@@ -24,6 +24,9 @@
 
     --warning: 36 100% 50%;
     --warning-foreground: 36 100% 20%;
+
+    --success: 120 100% 40%;
+    --success-foreground: 0 0% 100%;
   }
 
   .dark:root {
@@ -47,5 +50,8 @@
 
     --warning: 36 100% 50%;
     --warning-foreground: 36 100% 20%;
+
+    --success: 120 100% 40%;
+    --success-foreground: 0 0% 100%;
   }
 }

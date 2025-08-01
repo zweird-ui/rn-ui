@@ -76,6 +76,20 @@ const WarningButtons = () => (
   </View>
 )
 
+const SuccessButtons = () => (
+  <View className="w-full space-y-4">
+    <Text className="text-lg font-semibold text-foreground">Success Color</Text>
+    <View className="flex-row space-x-2">
+      <Button color="success" variant="fill" size="md">
+        Success Fill
+      </Button>
+      <Button color="success" variant="outline" size="md">
+        Success Outline
+      </Button>
+    </View>
+  </View>
+)
+
 const DisabledButtons = () => (
   <View className="w-full space-y-4">
     <Text className="text-lg font-semibold text-foreground">
@@ -120,6 +134,7 @@ export const ButtonShowcase = () => (
       <SecondaryButtons />
       <DangerButtons />
       <WarningButtons />
+      <SuccessButtons />
       <DisabledButtons />
       <LoadingButtons />
     </View>
