@@ -1,10 +1,11 @@
 import React from "react"
-import { ActivityIndicator, Pressable, Text } from "react-native"
+import { Pressable, Text } from "react-native"
 
 import {
   type UseButtonProps,
   useButton,
 } from "@/components/ui/button/use-button"
+import { Loader } from "@/components/ui/loader"
 
 export type ButtonProps = UseButtonProps
 
@@ -14,7 +15,7 @@ export const Button = (props: ButtonProps) => {
 
   return (
     <Pressable {...getButtonProps()}>
-      {isLoading && <ActivityIndicator {...getLoaderProps()} />}
+      {isLoading && <Loader {...getLoaderProps()} />}
       <Text {...getTextProps()} />
     </Pressable>
   )

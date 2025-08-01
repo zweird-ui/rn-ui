@@ -1,9 +1,7 @@
 import { type ReactNode, useCallback } from "react"
-import type {
-  ActivityIndicatorProps,
-  PressableProps,
-  TextProps,
-} from "react-native"
+import type { PressableProps, TextProps } from "react-native"
+
+import type { LoaderProps } from "@/components/ui/loader/loader"
 
 import { type ButtonVariants, buttonVariants } from "./variants"
 
@@ -41,13 +39,15 @@ export const useButton = ({
     [isDisabled, isLoading, props, slots],
   )
 
-  const getLoaderProps = useCallback<() => ActivityIndicatorProps>(
+  const getLoaderProps = useCallback<() => LoaderProps>(
     () => ({
       className: slots.loader(),
-      size: "small",
+      color,
+      isForeground: true,
     }),
-    [slots],
+    [slots, color],
   )
+
   const getTextProps = useCallback<() => TextProps>(
     () => ({
       className: slots.text(),
