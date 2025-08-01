@@ -1,9 +1,11 @@
-import { type ReactNode, useCallback } from "react"
-import type { PressableProps, TextProps } from "react-native"
+import { type ComponentProps, type ReactNode, useCallback } from "react"
+import type { Pressable, TextProps } from "react-native"
 
 import type { LoaderProps } from "@/components/ui/loader/loader"
 
 import { type ButtonVariants, buttonVariants } from "./variants"
+
+type PressableProps = ComponentProps<typeof Pressable>
 
 export type UseButtonProps = {
   isLoading?: boolean

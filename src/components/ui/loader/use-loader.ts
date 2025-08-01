@@ -1,12 +1,16 @@
-import { useCallback } from "react"
-import type { ViewProps } from "react-native"
+import { type RefObject, useCallback } from "react"
+import type { View, ViewProps } from "react-native"
 
 import {
   type LoaderVariants,
   loaderVariants,
 } from "@/components/ui/loader/variants"
 
-export type UseLoaderProps = LoaderVariants & ViewProps
+type ViewRef = {
+  ref?: RefObject<View>
+}
+
+export type UseLoaderProps = ViewRef & LoaderVariants & ViewProps
 
 export const useLoader = ({
   color,
@@ -22,7 +26,7 @@ export const useLoader = ({
     isForeground,
   })
 
-  const getWrapperProps = useCallback<() => ViewProps>(
+  const getWrapperProps = useCallback<() => ViewProps & ViewRef>(
     () => ({
       className: slots.wrapper({ className }),
       "aria-label": ariaLabel ?? "Loading",
