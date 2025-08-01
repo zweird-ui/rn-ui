@@ -40,6 +40,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="card"
+        options={{
+          title: "Cards",
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="credit-card" color={color} />
+          ),
+        }}
+      />
     </Tabs>
   )
 }
